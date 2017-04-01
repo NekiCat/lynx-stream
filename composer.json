@@ -1,0 +1,30 @@
+{
+  "name": "lynx/traversable",
+  "description": "A functional interface for traversing over arrays and other item streams.",
+  "keywords": [
+	"array",
+	"iterator",
+	"functional"
+  ],
+  "homepage": "http://github.com/NekiCat/lynx-traversable",
+  "type": "library",
+  "license": "MIT",
+  "authors": [
+	{
+	  "name": "Arne 'TigeR' Linck",
+	  "email": "a.linck@onlinehome.de",
+	  "homepage": "https://tiger.rocks/"
+	}
+  ],
+  "autoload": {
+	"psr-4": {
+	  "Lynx\\Core\\": "src/"
+	}
+  },
+  "require": {
+	"php": ">=7.0"
+  },
+  "require-dev": {
+	"phpunit/phpunit": "^5.1"
+  }
+}
