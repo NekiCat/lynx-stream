@@ -1,12 +1,12 @@
 {
-  "name": "lynx/traversable",
+  "name": "lynx/stream",
   "description": "A functional interface for traversing over arrays and other item streams.",
   "keywords": [
 	"array",
 	"iterator",
 	"functional"
   ],
-  "homepage": "http://github.com/NekiCat/lynx-traversable",
+  "homepage": "http://github.com/NekiCat/lynx-stream",
   "type": "library",
   "license": "MIT",
   "authors": [
