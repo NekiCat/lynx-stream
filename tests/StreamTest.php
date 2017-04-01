@@ -33,6 +33,12 @@ class StreamTest extends TestCase
 		}
 	}
 
+	public function testRange()
+	{
+		$this->assertEquals([1, 2, 3], Stream::range(1, 3)->toArray());
+		$this->assertEquals([3, 2, 1], Stream::range(3, 1)->toArray());
+	}
+
 	public function testCount()
 	{
 		$this->assertEquals(0, Stream::over([])->count());

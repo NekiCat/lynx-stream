@@ -44,6 +44,37 @@ class Stream implements IteratorAggregate, StreamInterface
 	}
 
 	/**
+	 * Creates a range of integers that can be traversed. Both ascending and descending ranges are supported.
+	 *
+	 * @param int $low
+	 * @param int $high
+	 * @return Stream
+	 */
+	public static function range(int $low, int $high): Stream
+	{
+		if ($low <= $high)
+		{
+			return Stream::over(function () use ($low, $high)
+			{
+				for ($i = $low; $i <= $high; $i++)
+				{
+					yield $i;
+				}
+			});
+		}
+		else
+		{
+			return Stream::over(function () use ($low, $high)
+			{
+				for ($i = $low; $i >= $high; $i--)
+				{
+					yield $i;
+				}
+			});
+		}
+	}
+
+	/**
 	 * @type \Traversable
 	 */
 	protected $source;
